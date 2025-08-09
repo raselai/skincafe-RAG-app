@@ -1,14 +1,29 @@
-# Cosmetics E-commerce RAG Assistant
+# SkinCafe AI Beauty Assistant
 
-A multimodal Retrieval-Augmented Generation (RAG) application for a cosmetics e-commerce platform. This application allows customers to ask questions about products and find similar items using both text and image queries.
+An intelligent AI-powered beauty product recommendation system for SkinCafe cosmetics e-commerce platform. This application uses Retrieval-Augmented Generation (RAG) technology to help customers find the perfect skincare and beauty products through natural language conversations.
+
+## Demo Video
+
+Watch the SkinCafe AI Beauty Assistant in action:
+
+https://github.com/raselai/skincafe-RAG-app/blob/main/Skrin%20Cafe%20Final.mp4
+
+### Key Features Demonstrated:
+- 🤖 AI-powered product recommendations
+- 🖼️ Product image display with automatic loading
+- 💰 Price information (regular and sale prices)
+- 💬 Interactive chat interface with conversation history
+- 📱 Mobile-responsive design
+- 🔍 Intelligent product search and filtering
 
 ## Features
 
 - Text-based product search and recommendations
-- Image-based product search using CLIP embeddings
 - Product information retrieval including descriptions, prices, and images
-- Interactive Streamlit interface
-- Support for both text and image queries
+- Interactive Streamlit interface with chat functionality
+- Automatic product image display
+- Conversation history maintenance
+- Mobile-responsive design
 
 ## Prerequisites
 
@@ -20,8 +35,8 @@ A multimodal Retrieval-Augmented Generation (RAG) application for a cosmetics e-
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/raselai/skincafe-RAG-app.git
+cd skincafe-RAG-app
 ```
 
 2. Create a virtual environment:
@@ -44,31 +59,33 @@ OPENAI_API_KEY=your_api_key_here
 
 1. Start the Streamlit application:
 ```bash
-streamlit run app.py
+streamlit run rag.py
 ```
 
 2. Open your web browser and navigate to the URL shown in the terminal (usually http://localhost:8501)
 
 3. You can:
-   - Type questions about products in the text input
-   - Upload images to find similar products
-   - Get product recommendations with images and prices
+   - Type questions about products in the chat input
+   - Get personalized product recommendations
+   - View product images and prices
+   - Ask follow-up questions for more details
 
 ## Project Structure
 
-- `app.py`: Main Streamlit application
-- `rag_engine.py`: RAG implementation with text and image search capabilities
-- `data/skincafe_products.json`: Product database
+- `rag.py`: Main Streamlit application with RAG implementation
+- `data/skincafe_products.json`: Product database with SkinCafe products
 - `requirements.txt`: Python dependencies
 - `.env`: Environment variables (not tracked in git)
+- `TASK.md`: Project task breakdown
+- `PLANNING.md`: Project planning and architecture
 
 ## How It Works
 
-1. The application uses ChromaDB to store product embeddings
+1. The application uses FAISS vector database to store product embeddings
 2. Text queries are processed using OpenAI's embeddings
-3. Image queries are processed using CLIP embeddings
-4. The RAG system combines retrieved information with GPT-3.5-turbo to generate responses
-5. Responses include product images and links when relevant
+3. The RAG system combines retrieved information with GPT-4 to generate responses
+4. Responses include product images, prices, and detailed information
+5. Chat history is maintained for contextual conversations
 
 ## Contributing
 
