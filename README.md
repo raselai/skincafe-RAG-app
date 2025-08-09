@@ -6,7 +6,9 @@ An intelligent AI-powered beauty product recommendation system for SkinCafe cosm
 
 Watch the SkinCafe AI Beauty Assistant in action:
 
-https://github.com/raselai/skincafe-RAG-app/blob/main/Skrin%20Cafe%20Final.mp4
+[![Demo Video](https://img.youtube.com/vi/MhP4IrHRDkg/0.jpg)](https://youtu.be/MhP4IrHRDkg)
+
+[Watch on YouTube](https://youtu.be/MhP4IrHRDkg)
 
 ### Key Features Demonstrated:
 - 🤖 AI-powered product recommendations
